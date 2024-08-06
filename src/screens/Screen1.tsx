@@ -6,7 +6,7 @@ export const Screen1: React.FC<{ navigation: any }> = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.title}>Bienvenido</Text>
       <Image source={require('../../assets/images/mobile-apps.png')} style={styles.image} />
-      <Button title="Acceder" onPress={() => navigation.navigate('Divisiones')} />
+      <Button title="Ingresar" onPress={() => navigation.navigate('Divisiones')} />
     </View>
   );
 };

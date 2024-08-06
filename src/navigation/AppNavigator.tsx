@@ -10,7 +10,7 @@ export const AppNavigator: React.FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Screen1">
-        <Stack.Screen name="Acceso" component={Screen1} />
+        <Stack.Screen name="Welcome" component={Screen1} />
         <Stack.Screen name="Divisiones" component={Screen2} />
       </Stack.Navigator>
     </NavigationContainer>
