@@ -28,7 +28,7 @@ export const Screen2: React.FC = () => {
         <Text style={styles.textprimary}>Llene los siguientes campos:</Text>
       <NumberInput value={num1} onChangeText={setNum1} placeholder="Primera Cifra" />
       <NumberInput value={num2} onChangeText={setNum2} placeholder="Segunda Cifra" />
-      <Button title="Dividir" onPress={handleDivide} />
+      <Button title="Realizar Operación" onPress={handleDivide} />
       <Text style={styles.resultText}>Resultado: </Text>
       <Text style={styles.result}>{result}</Text>
     </View>
