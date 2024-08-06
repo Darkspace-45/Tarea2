@@ -23,10 +23,13 @@ export const Screen2: React.FC = () => {
   };
 
   return (
+    
     <View style={styles.container}>
+        <Text style={styles.textprimary}>Llene los siguientes campos:</Text>
       <NumberInput value={num1} onChangeText={setNum1} placeholder="Primera Cifra" />
       <NumberInput value={num2} onChangeText={setNum2} placeholder="Segunda Cifra" />
       <Button title="Dividir" onPress={handleDivide} />
+      <Text style={styles.resultText}>Resultado: </Text>
       <Text style={styles.result}>{result}</Text>
     </View>
   );
@@ -42,5 +45,15 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 18,
   },
+  resultText:{
+    paddingTop: 10,
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  textprimary:{
+    fontSize: 20,
+    paddingBottom: 10,
+    fontWeight: 'bold',
+  }
 });
 
